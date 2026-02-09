@@ -10,6 +10,7 @@ from datetime import datetime
 class bansearch(znc.Module):
 
     module_types = [znc.CModInfo.NetworkModule]
+    description = "Ban/Quiet searching module"
 
     def OnLoad(self, args, message):
         self.loadSettings()
